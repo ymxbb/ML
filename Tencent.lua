@@ -75,3 +75,4 @@ function wa_lua_on_close_cb(ctx)
     ctx_free(ctx)
     return SUCCESS
 end
+
