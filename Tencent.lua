@@ -42,7 +42,7 @@ function wa_lua_on_handshake_cb(ctx)
     if flags[uuid] ~= kHttpHeaderSent then
         local host = ctx_address_host(ctx)
         local port = ctx_address_port(ctx)
-        local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\nQ-GUID:5f1cb5b1440194056377de5d131646bd\r\nQ-Token:c70e612a5edf00cae16898fd2c81bb97532c96f52d2a65896999d1a4da95efa4421d2a2d8552 dfa266e78d0dd4660c87\r\n' ..
+        local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\nQ-GUID:5f1cb5b1440194056377de5d131646bd\r\nQ-Token:c70e612a5edf00cae16898fd2c81bb97532c96f52d2a65896999d1a4da95efa4421d2a2d8552dfa266e78d0dd4660c87\r\n' ..
                     'Host: ' .. host ..'\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n\r\n'
         ctx_write(ctx, res)
